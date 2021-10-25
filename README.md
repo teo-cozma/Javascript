@@ -1,13 +1,18 @@
 # Javascript - Cookie Clicker
+
 **Assignment source** : https://github.com/becodeorg/BXL-Swartz-5.34/blob/main/1.The-Field/12.Javascript/cookieClicker.md
 
 ## Tools and languages used
+
 - HTML, CSS (Sass?), Javascript (languages)
 - Visual Studio Code (coding)
-- Discord, Google Meet, Github (Communication)
+- Discord, Google Meet, Github, Replit (Communication)
+- Adobe XD (prototyping)
 
 ## Day one (25/10) 
+
 ### Instructions review
+
 - What : Cookie Clicker.
 - Why : consolidation project (mainly of Javascript skills).
 - When : Starting today, 4 full days of team work, until 28/10.
@@ -19,10 +24,13 @@
         - Frontend (CSS + maybe Sass) + Project Manager : Teodora.
 
 ### Brainstorming
+
 **3 sections :**
+
 1. Cookie section : Header 1 for the cookie counter. H1 for the amount of clicks.
     - Interactive cookie + its title + cookie counter = 1st section.
     - "Within the HTML, put a click button which will increment a counter and a label initialised at 0 to display said counter."
+
 2. Score section :
     - Score section : score count.
     - 1 cookie : the cookie is its own button.
@@ -46,7 +54,9 @@
 Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
 #### Tasks for today
+
 **This morning (10.30 - 12.30)**
+
 - Research on the project (assignment instructions).
     - See what corresponds with the current mandatory steps (bonuses are set aside for the moment).
 - Indepth look at the code of the original cookie clicker.
@@ -103,7 +113,9 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
             - Products (mines, grandmas) : when the game first starts, these should be hidden/obscured.
 *(Another interesting reference : https://particle-clicker.web.cern.ch/)*
 
+
 **This afternoon(13.30 - 17)**
+
 - Gathering ideas, research, and pooling resources.
 - What technical difficulties/challenges may lie ahead ?
     - How does the multiplier work ?
@@ -139,17 +151,35 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
     - UX Prototype (please ? ^_^)
 
+- Daily working method :
+    - We each work on our own at the beginning, and at the end of the day, shar our code via Discord, and then "commit" everything on Replit.
 
-#### Thinking ahead - the evaluation portion
+##### Thinking ahead - the evaluation portion
+
 - Regularly assess out progress and make sure the must-have features are included
 - Regularly update the ReadMe.
-- Towards the end (on the last day, or even during the coding process), use the validation and performance tools (See Lighthouse and W3C Validation tool).
+- Towards the end (on the last day, or even during the coding process), use the validation and performance tools (See Lighthouse and W3C Validation tool); perhaps on Thursday.
+
+**This afternoon's steps (14.30 - 16.30)**
+
+- More research and mapping out the tasks for tomorrow :
+    - Brigita : HTML research and writing
+    - David : Javascript research
+    - Teodora : visual research and prototyping
+
+
+
 
 ## Resources
+
+What is a Cookie Clicker ?
 - http://orteil.dashnet.org/cookieclicker/
 - https://en.wikipedia.org/wiki/Cookie_Clicker 
+- https://cookie-clicker2.com/
 - https://particle-clicker.web.cern.ch/
 - https://www.youtube.com/watch?v=2Dx76lD8Scc&t=69s 
+
+Tutorials for our project:
 
 - https://www.flaticon.com/free-icons/cookie 
 - https://www.youtube.com/watch?v=uUgOBe_wb6E
