@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background-color: #215878;
+}
+
+body h1 {
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.score {
+  background-color: #2E6C91;
+}
+
+.store {
+  background-color: #2E6C91;
+}
+/*# sourceMappingURL=main.css.map */

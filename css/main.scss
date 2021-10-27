@@ -1,0 +1,42 @@
+$colors: (
+    body_bg: #215878,
+    section_bg: #2E6C91,
+    button1: #FFB864,
+    button2: #FFFFFF
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$fonts: (
+    font1: 'Gloria Hallelujah', cursive,
+);
+
+@function font ($font-name) {
+    @return map-get ($fonts, $font-name)
+}
+
+body {
+    margin: 0;
+    background-color: color(body_bg);
+
+    h1 {
+        color: white;
+        font-family: fonts(font1);
+    }
+
+    p {
+        color: #FFFFFF;
+    }
+}
+
+section {
+    
+    .score {
+        background-color: color(section_bg);
+    }
+    .store {
+        background-color: color(section_bg);
+    }
+}

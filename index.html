@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie clicker</title>
+    <!--Styles-->
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cookieland - The Swartz Cookie Taskforce's bakery</h1>
+    </header>
+    
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <section class="score">
+                    <p id="subhead">(here, have a cookie)</p>
+                    <button id="cookieclick" onclick="add()">
+                        <img src="images/cookie@2x.png" alt="cookie" id="cookie" onmouseover="hoverImg()" onmouseout="normalImg()">
+
+                        <label class="score" id="cookie_label" for="clicker">You've got <span id="counter">0</span> COOKIES.</label>
+                    </button>
+                    
+                    <div>        
+                        <p id="CPS">per second : 
+                            <input type="text" id="text_2" disabled style="text-align: center;" value="0">
+                        </p>
+                    </div>
+        
+                    <div class="buttons">
+                        <button disabled class="btn" id="save" onclick="save()"><span id="save-btn">Save</span></button>
+                        <button class="btn" id="load" onclick="load()"><span id="load-btn">Load</span></button>
+                        <button class="btn" id="reset" onclick="reset()" ><span id="reset-btn">Reset</span></button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="grid-item">
+                <section class="store">
+
+                    <label for="multiplier1" id="multiplier-box">
+                        <p>Multiplier upgrade</p>
+                            <button class="btn" id="multiplier" name="multiplier" onclick="buyMultiplier()">
+                                <span id="buyMultiplier">
+                                    <span id="multiplier1">X2</span>
+                                        <br>
+                                        <span id="costMultiplier">Cost : 10 Cookies</span>
+                                </span>
+                            </button>
+                        <p id="currentMultiplier">You own <input type="text" id="text" disabled style="text-align: center;"> multipliers</p>
+                    </label>
+
+                    <label for="autoclicker" id="autoclicker-box">
+                        <p>Buy an AutoClicker</p>
+                            <button class="btn" id="autoclicker" name="autoClicker" onclick="buyAutoClick()">
+                                <span id="buyAutoClick">
+                                    <span id="autoClick"><img src="images/custom-cursor.png" alt="cursor" id="cursor"></span> 
+                                        <br>
+                                        <span id="costAutoClick">Cost : 20 Cookies</span>
+                                </span>
+                            </button>
+                        <p id="amountAutoclick">You own <input type="text" id="text" disabled style="text-align: center;"> Auto Clickers</p>
+                    </label>
+
+                    
+
+                    <label for="booster" id="booster-box">
+                        <p>Get your Turbo</p>
+                        <p>Countdown</p>
+                            <button class="btn" id="boosterCost" name="boosterCost" onclick="booster()">
+                                <span id="buyBooster">
+                                    <span id="Booster">!!!Booster!!!</span> 
+                                        <br>
+                                        <span id="costFarms">Cost : 100 Cookies</span>
+                                </span>
+                            </button>
+                    </label>
+
+                 <!--   <label for="booster">
+                        Get your Turbo booster <br> <br>
+                        <button id='boosterCost' onclick="booster()"> <br> 100 cookies</button>
+                    </label> -->
+
+                    <!-- <label for="farm" id="farm-box">
+                        <p>Buy a Farm</p>
+                            <button class="btn" id="farm" name="farm" onclick="buyFarm()">
+                                <span id="buyFarm">
+                                    <span id="Farm"><img src="images/fruit-tree.png" alt="farm-img" id="farm-img"></span> 
+                                        <br>
+                                        <span id="costFarms">Cost : 50 Cookies</span>
+                                </span>
+                            </button>
+                        <p id="amountFarms">You own <input type="text" id="text" disabled style="text-align: center;">farms.</p>
+                    </label> -->
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

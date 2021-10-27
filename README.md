@@ -2,16 +2,50 @@
 
 **Assignment source** : https://github.com/becodeorg/BXL-Swartz-5.34/blob/main/1.The-Field/12.Javascript/cookieClicker.md
 
-## Tools and languages used
+## Team members
+- Brigita Sabutyte
+- David Tirel
+- Teodora Cozma
+
+## Tools and languages
 
 - HTML, CSS (Sass?), Javascript (languages)
 - Visual Studio Code (coding)
 - Discord, Google Meet, Github, Replit (Communication)
 - Adobe XD (prototyping)
 
-## Day one (25/10) 
+## Resources
 
-### Instructions review
+What is a Cookie Clicker ?
+
+- http://orteil.dashnet.org/cookieclicker/
+- https://en.wikipedia.org/wiki/Cookie_Clicker 
+- https://cookie-clicker2.com/
+- https://particle-clicker.web.cern.ch/
+- https://www.youtube.com/watch?v=2Dx76lD8Scc&t=69s 
+
+Tutorials for our project:
+
+- https://www.flaticon.com/free-icons/cookie 
+- https://www.youtube.com/watch?v=uUgOBe_wb6E
+- https://www.youtube.com/watch?v=j_nI6G3ZDiE 
+
+- https://codesource.io/how-to-disable-button-in-javascript/
+- https://stackoverflow.com/questions/57477529/disable-a-button-if-empty-input
+- https://www.youtube.com/watch?v=PSEhNb69XpI
+- https://www.youtube.com/watch?v=vU2akkcSV-g
+- https://www.youtube.com/watch?v=PSEhNb69XpI
+- https://www.youtube.com/watch?v=KgYkgBno5Gs
+
+- https://stackoverflow.com/questions/8583524/how-to-set-time-limit
+
+---
+
+## Project log
+
+### Day one (25/10) 
+
+#### Instructions review
 
 - What : Cookie Clicker.
 - Why : consolidation project (mainly of Javascript skills).
@@ -23,7 +57,7 @@
         - Backend (Javascript) + Frontend (HTML structure) : Brigita.
         - Frontend (CSS + maybe Sass) + Project Manager : Teodora.
 
-### Brainstorming
+#### Brainstorming
 
 **3 sections :**
 
@@ -53,9 +87,9 @@
 
 Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
-#### Tasks for today
+##### Tasks for today
 
-**This morning (10.30 - 12.30)**
+**This morning (10:30 - 12:30)**
 
 - Research on the project (assignment instructions).
     - See what corresponds with the current mandatory steps (bonuses are set aside for the moment).
@@ -114,7 +148,7 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 *(Another interesting reference : https://particle-clicker.web.cern.ch/)*
 
 
-**This afternoon(13.30 - 17)**
+**This afternoon(13:30 - 17:00)**
 
 - Gathering ideas, research, and pooling resources.
 - What technical difficulties/challenges may lie ahead ?
@@ -154,33 +188,96 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 - Daily working method :
     - We each work on our own at the beginning, and at the end of the day, shar our code via Discord, and then "commit" everything on Replit.
 
-##### Thinking ahead - the evaluation portion
+###### Thinking ahead - the evaluation portion
 
 - Regularly assess out progress and make sure the must-have features are included
 - Regularly update the ReadMe.
 - Towards the end (on the last day, or even during the coding process), use the validation and performance tools (See Lighthouse and W3C Validation tool); perhaps on Thursday.
 
-**This afternoon's steps (14.30 - 16.30)**
+**This afternoon's steps (14:30 - 16:30)**
 
 - More research and mapping out the tasks for tomorrow :
     - Brigita : HTML research and writing
     - David : Javascript research
     - Teodora : visual research and prototyping
 
+---
 
+### Day two (26/10) 
 
+**Morning meeting at 9:00 :**
 
-## Resources
+- Step 5 complete.
+- Sharing code.
+- Technical issues : connecting the HTML with the Javascript, getting the functions to work properly
+- Also, the bonuses are for the players, so step 11 and further are mandatory.
+- Autoclicker is being done by David.
+- Multiplier done by Brigita ; pending as well.
+- Resolving issues in scripts.
 
-What is a Cookie Clicker ?
-- http://orteil.dashnet.org/cookieclicker/
-- https://en.wikipedia.org/wiki/Cookie_Clicker 
-- https://cookie-clicker2.com/
-- https://particle-clicker.web.cern.ch/
-- https://www.youtube.com/watch?v=2Dx76lD8Scc&t=69s 
+**For this morning (9:30 - 12:30)**
 
-Tutorials for our project:
+Continue the assigned steps. Look into any issues. Meeting at 13.30 to discuss progress and resolve any issues.
 
-- https://www.flaticon.com/free-icons/cookie 
-- https://www.youtube.com/watch?v=uUgOBe_wb6E
-- https://www.youtube.com/watch?v=j_nI6G3ZDiE 
+**For this afternoon (13:30 - 16:30)**
+Teo : make the site responsive. Note : the multiplier buttons should also include the cost! + find the script to make certain buttons disabled according to the amount of cookies.
+David : share functions ; load function resolved.
+Brigita : shared code and functions ; syntax issues resolved.
+
+**Scrum meeting (16:30 - 17:00)**
+
+- What was done ? 
+    - Multiplier steps
+
+- What issues came up + were resolved ? 
+    - Issues with the multiplier.
+
+- What are the next steps ? 
+
+- Issues : 
+    - Figuring out how to center elements !!!!!!! (Had to refresh my memory, again)
+    - How to disable a button using Javascript : coding difficulties.
+    - Save and Load not working with the multiplier.
+
+- What issues to fix tomorrow :
+    - Save and Load buttons ;
+    - Get the multiplier incrementing by 2 (again) ;
+    - Enable/disable buttons depending on conditions (Step 12) ;
+    - Bonuses : Step 11.
+
+---
+
+### Day three (27/10) 
+
+**Morning meeting (9:00)**
+
+- What was done yesterday :
+    - Responsive (pending)
+    - Save/load investigation (pending)
+    - Multiplier (resolved)
+
+- What needs to be done today :
+    - [x] Work on disabling buttons (step 12).
+    - [x] Inspect step 8.
+    - [] Redo Javascript.
+        - [] Resolve technical issues with the multipliers (loading and incrementing).
+    - [] Compare Javascript codes (Brigita, David).
+    - [] Compare and merge HTML files and apply CSS style.
+    - [x] Appearance-wise : do we need the button tag for the cookie and cursor, and other buttons ?
+        - Answer : yes. Just not necessarily include "a" tags.
+    - [x] For the responsive : make the settings fit small mobile screens.
+
+**Evening meet (16:45 - 17:00)**
+- What we managed to do :
+    - Enable/disable buttons
+    - Made the multiplier work (only with AutoClicker)
+    - Start working on the booster (bonus)
+        - Countdown works !
+    - Responsive CSS
+
+- What needs to be done tomorrow : 
+    - [] Complete all the Javascript steps :
+        - [] Make the booster work
+        - [] Add the Reset function
+    - [] Update the "main" HTML code with the right script, and style it.
+    - [] Deploy the page and use LightHouse to inspect the accessibility, usability, SEO, etc.
