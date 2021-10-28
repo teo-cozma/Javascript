@@ -1,6 +1,7 @@
 # Javascript - Cookie Clicker
 
 **Assignment source** : https://github.com/becodeorg/BXL-Swartz-5.34/blob/main/1.The-Field/12.Javascript/cookieClicker.md
+
 **Link to live version** : https://teo-cozma.github.io/Javascript/
 
 ## Team members
@@ -310,8 +311,7 @@ What needs to be done today :
 
 - [x] Update the HTML and CSS with the right tags.
     - [x] Add a footer!
-- [ ] Deploy and run the site, and do the performance tests.
-- [ ] Fix any issues that appear from the tests.
+
 
 **Afternoon work**
 - W3C HTML validation tool (issues) :
@@ -320,3 +320,11 @@ What needs to be done today :
     - Any "button" element descendant of a "label" with a "for" attribute must have an ID value that matches that attribute.
         - Solutions : all the labels could be inserted inside the buttons, but also MUST be inserted inside paragraphs.
 
+- [x] Deploy and run the site, and do the performance tests. Results = 
+    - Performance  = 86
+    - Accessibility = 95
+    - Best practices = 100
+    - SEO = 92
+- [ ] Fix any issues that appear from the tests.
+    - "Eliminate render-blocking resources" (issue with importing the font style)
+    -  "Image elements do not have explicit width and height"
