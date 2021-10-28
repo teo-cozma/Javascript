@@ -1,7 +1,7 @@
 # Javascript - Cookie Clicker
 
 **Assignment source** : https://github.com/becodeorg/BXL-Swartz-5.34/blob/main/1.The-Field/12.Javascript/cookieClicker.md
-**Link to live version** :
+**Link to live version** : https://teo-cozma.github.io/Javascript/
 
 ## Team members
 - Brigita Sabutyte
