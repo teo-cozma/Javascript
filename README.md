@@ -1,18 +1,26 @@
 # Javascript - Cookie Clicker
 
 **Assignment source** : https://github.com/becodeorg/BXL-Swartz-5.34/blob/main/1.The-Field/12.Javascript/cookieClicker.md
+**Link to live version** :
 
 ## Team members
 - Brigita Sabutyte
 - David Tirel
 - Teodora Cozma
 
-## Tools and languages
+## Languages
 
-- HTML, CSS (Sass?), Javascript (languages)
-- Visual Studio Code (coding)
+- HTML
+- CSS
+- Javascript
+
+## Tools
+
+- Visual Studio Code (text editor)
 - Discord, Google Meet, Github, Replit (Communication)
 - Adobe XD (prototyping)
+- W3C Markup Validation Service
+- W3C CSS Validation Service
 
 ## Resources
 
@@ -24,7 +32,7 @@ What is a Cookie Clicker ?
 - https://particle-clicker.web.cern.ch/
 - https://www.youtube.com/watch?v=2Dx76lD8Scc&t=69s 
 
-Tutorials for our project:
+Tutorials for our project :
 
 - https://www.flaticon.com/free-icons/cookie 
 - https://www.youtube.com/watch?v=uUgOBe_wb6E
@@ -38,6 +46,11 @@ Tutorials for our project:
 - https://www.youtube.com/watch?v=KgYkgBno5Gs
 
 - https://stackoverflow.com/questions/8583524/how-to-set-time-limit
+
+Validation services :
+
+- https://validator.w3.org/#validate_by_input
+- http://jigsaw.w3.org/css-validator/
 
 ---
 
@@ -97,19 +110,21 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
 (https://www.youtube.com/watch?v=2Dx76lD8Scc&t=69s)
 *Description of the game (and its existential qualities!)*
-    - 1 click = 1 cookie
-    - 15 clicks = 15 cookies = 1 cursor (purchased)
-    - 10 cursors = 1 cookie/sec (CpS)
-    - 100 cookies = grandma that produces and markets your cookies.
-    - Cookies are currency that allows you to purchase farms, mines, factories, etc.
-    = cookie economy that is permeating and overwhelming. This expands into an eventual cookieverse
-    - Transcendance of existence = Ascend and start again
-    - Golden cookie spawns randomly
-    - Whatch out for the grandma's : potential rebellion and apocalypse. Save everyone with economic gain, or exploit them to make more wealth.
-    - Small "code hack" in the console : Game.Earn(x).
+- 1 click = 1 cookie
+- 15 clicks = 15 cookies = 1 cursor (purchased)
+- 10 cursors = 1 cookie/sec (CpS)
+- 100 cookies = grandma that produces and markets your cookies.
+- Cookies are currency that allows you to purchase farms, mines, factories, etc.
+= cookie economy that is permeating and overwhelming. This expands into an eventual cookieverse
+- Transcendance of existence = Ascend and start again
+- Golden cookie spawns randomly
+- Whatch out for the grandma's : potential rebellion and apocalypse. Save everyone with economic gain, or exploit them to make more wealth.
+- Small "code hack" in the console : Game.Earn(x).
 
 (http://orteil.dashnet.org/cookieclicker/)
+
 *Info log/Version history*
+
 - Safe saving
 - Cursor display style
 - Import/export feature : retrieve a save game from an onld version (disabled after a week)
@@ -148,7 +163,7 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 *(Another interesting reference : https://particle-clicker.web.cern.ch/)*
 
 
-**This afternoon(13:30 - 17:00)**
+**This afternoon (13:30 - 17:00)**
 
 - Gathering ideas, research, and pooling resources.
 - What technical difficulties/challenges may lie ahead ?
@@ -157,21 +172,19 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
     - Understanding how to apply Javascript.
         - Gather resources and information on how to write the code for each button.
 
-- Prototyping session on Figma
+**What is our groupwork methodology ?**
+- How does each one of us work ?
+    - Alone
+    - Research focused
+    - Coding focused
+    - Do we do "live coding sessions", where we share our screen and type code, and each one gives their input on the spot ?
+- How can we make this deadline work for us ?
+- How do we split the coding work ? How do we determine following tasks and delegate them ? If we each work on our own time, how do we agree on and consolidate the final code ?
 
-- What is our groupwork methodology ?
-    - How does each one of us work ?
-        - Alone
-        - Research focused
-        - Coding focused
-        - Do we do "live coding sessions", where we share our screen and type code, and each one gives their input on the spot ?
-    - How can we make this deadline work for us ?
-    - How do we split the coding work ? How do we determine following tasks and delegate them ? If we each work on our own time, how do we agree on and consolidate the final code ?
-
-    - Deciding how to communicate and share information :
-    - On Discord, room 4 (chat + call).
-    - ... (other collaboration tools).
-    - Definitely Github, the repositories will be shared
+- Deciding how to communicate and share information :
+- On Discord, room 4 (chat + call).
+- ... (other collaboration tools).
+- Definitely Github, the repositories will be shared
 
 - Deciding on next steps :
     - Finish research today ?
@@ -183,12 +196,11 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
             - Therefore, in Javascript, would these steps be distributed ?
     - When it comes to actually building the project, how much do we take from the original, and how much do we make it our own ?
 
-    - UX Prototype (please ? ^_^)
 
 - Daily working method :
     - We each work on our own at the beginning, and at the end of the day, shar our code via Discord, and then "commit" everything on Replit.
 
-###### Thinking ahead - the evaluation portion
+##### Thinking ahead - the evaluation portion
 
 - Regularly assess out progress and make sure the must-have features are included
 - Regularly update the ReadMe.
@@ -201,7 +213,7 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
     - David : Javascript research
     - Teodora : visual research and prototyping
 
----
+
 
 ### Day two (26/10) 
 
@@ -238,6 +250,7 @@ Brigita : shared code and functions ; syntax issues resolved.
     - Figuring out how to center elements !!!!!!! (Had to refresh my memory, again)
     - How to disable a button using Javascript : coding difficulties.
     - Save and Load not working with the multiplier.
+    - Unable to continue using Sass due to compiling issues into the main CSS. So back to styling with vanilla CSS.
 
 - What issues to fix tomorrow :
     - Save and Load buttons ;
@@ -245,7 +258,7 @@ Brigita : shared code and functions ; syntax issues resolved.
     - Enable/disable buttons depending on conditions (Step 12) ;
     - Bonuses : Step 11.
 
----
+
 
 ### Day three (27/10) 
 
@@ -259,10 +272,10 @@ Brigita : shared code and functions ; syntax issues resolved.
 - What needs to be done today :
     - [x] Work on disabling buttons (step 12).
     - [x] Inspect step 8.
-    - [] Redo Javascript.
-        - [] Resolve technical issues with the multipliers (loading and incrementing).
-    - [] Compare Javascript codes (Brigita, David).
-    - [] Compare and merge HTML files and apply CSS style.
+    - [x] Redo Javascript.
+        - [ ] Resolve technical issues with the multipliers (loading and incrementing).
+    - [x] Compare Javascript codes (Brigita, David).
+    - [ ] Compare and merge HTML files and apply CSS style.
     - [x] Appearance-wise : do we need the button tag for the cookie and cursor, and other buttons ?
         - Answer : yes. Just not necessarily include "a" tags.
     - [x] For the responsive : make the settings fit small mobile screens.
@@ -276,8 +289,34 @@ Brigita : shared code and functions ; syntax issues resolved.
     - Responsive CSS
 
 - What needs to be done tomorrow : 
-    - [] Complete all the Javascript steps :
-        - [] Make the booster work
-        - [] Add the Reset function
-    - [] Update the "main" HTML code with the right script, and style it.
-    - [] Deploy the page and use LightHouse to inspect the accessibility, usability, SEO, etc.
+    - Complete all the Javascript steps :
+        - Make the booster work
+        - Add the Reset function
+    - Update the "main" HTML code with the right script, and style it.
+    - Deploy the page and use LightHouse to inspect the accessibility, usability, SEO, etc.
+
+
+
+### Day four (28/10) 
+
+**Morning meeting**
+
+What needs to be done today :
+
+- [x] Fix technical issues in the script.
+    - [x] Make the booster work.
+    - [x] Make the clicks work independently.
+    - [x] Prevent the scripts from running by itself.
+
+- [x] Update the HTML and CSS with the right tags.
+    - [x] Add a footer!
+- [ ] Deploy and run the site, and do the performance tests.
+- [ ] Fix any issues that appear from the tests.
+
+**Afternoon work**
+- W3C HTML validation tool (issues) :
+    - "Label" elements cannot have more than one descendant.
+    - "p" elements cannot be descendants of labels.
+    - Any "button" element descendant of a "label" with a "for" attribute must have an ID value that matches that attribute.
+        - Solutions : all the labels could be inserted inside the buttons, but also MUST be inserted inside paragraphs.
+

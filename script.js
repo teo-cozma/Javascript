@@ -1,138 +1,158 @@
-// Image hover
+
 function hoverImg() {
     document.getElementById("cookie").style.width = "320px";
 }
 function normalImg() {
     document.getElementById("cookie").style.width = "300px";
 }
-
-var cookiecount = 0;
-var autoClick = 0; 
-var multiplier = 0;
-
 function update() {
-    document.getElementById('text').value = cookiecount;
-    document.title = cookiecount + " cookies"; 
-
-    document.getElementById("amountCookies").innerHTML = "You've got " + cookiecount + " cookies.";
-    document.getElementById("CPS").innerHTML = "per second : " + ((autoClick) * multiplier);
-
-    //document.getElementById("amountMultiplier").innerHTML = "You own " + "0" + " multipliers."
-    document.getElementById("amountAutoClick").innerHTML = "You own " + autoClick + " Auto Clickers.";
-}
-
-/*function timer() {
-    cookiecount = cookiecount + autoClick;
-    update();
-}
-setInterval(timer, 1000)*/
-
-
-// Image increment
-function add() {
-    cookiecount = cookiecount + 1;
-    update();
-}
-
-
-// Buttons
-function save() {
-    localStorage.setItem("cookiecount", cookiecount);
-    localStorage.setItem("autoClick", autoClick);
-    //localStorage.setItem("multiplier", multiplier);
-}
-function load() {
-    localStorage.getItem("cookiecount", cookiecount);
-    cookiecount = parseInt(cookiecount);
     
+    //increment
+    document.getElementById('counter').value = counter;
+    counter.innerHTML = cookies;
+    //multiplier
+
+     if ((cookies < (multiplier +1)*5) || cookies==0) {
+        document.getElementById("multiplier").disabled = true;
+    } else {
+        document.getElementById("multiplier").disabled = false;
+    }
+
+    document.getElementById("mlt").innerHTML = (multiplier + 1);
+    document.getElementById("costMultiplier").innerHTML = ((multiplier + 1) * 5);
+    document.getElementById('currentMultiplier').innerHTML = ("Your current multiplier is x" + multiplier);
+    
+   
+   
+   //autoclicker
+    document.getElementById('cookiesPerSecond').innerHTML = "You are gaining " + multiplier+ " cookies per second";
+    document.getElementById('amountAutoClick').innerHTML = "You got " + autoClick + " Auto Clickers";
+    document.getElementById('costAutoClick').innerHTML = ((autoClick + 1) * 20) + " Cookies";
+    if (cookies < ((autoClick +1) * 20) || cookies == 0) {
+        document.getElementById("autoclicker").disabled = true;
+    } else {
+        document.getElementById("autoclicker").disabled = false; 
+    }
+
+        
+//booster
+
+if ((cookies <= 100) || (cookies==0)) {
+    document.getElementById("boosterCost").disabled = true;
+    } else {
+        document.getElementById("boosterCost").disabled = false;
+    }
+ 
+}
+//setting variables 
+var multiplier = 1;
+var cookies = 0;
+var autoClick=0;
+var booster = document.getElementById("boosterCost").value;
+
+
+
+//clicks pers/s
+
+function timer() {
+  
+   cookies = cookies + multiplier*autoClick;
+    
+   update();
+   
+}
+
+
+//cookie counter
+function add(){
+    cookies = cookies + 1;
+    update();
+}
+
+function save(){
+localStorage.setItem("cookies", cookies);
+localStorage.setItem("multiplier", multiplier)
+localStorage.setItem("autoClick", autoClick);
+localStorage.setItem("booster", booster);
+
+
+
+}
+function load(){
+    cookies = localStorage.getItem("cookies");
+    cookies = parseInt(cookies);
     autoClick = localStorage.getItem("autoClick");
     autoClick = parseInt(autoClick);
+    multiplier = localStorage.getItem("multiplier");
+    multiplier = parseInt(multiplier); 
+    booster = localStorage.getItem("booster");
 
-    //multiplier = localStorage.setItem("multiplier", multiplier);
-    //multiplier = parseInt(multiplier);
+   update();
+}
+function reset(){
+    cookies = 0;
 
-    update();
 }
 
-/*function buyMultiplier() {
-    if (cookiecount >= ((multiplier + 1) * 100)) {
-        cookiecount = cookiecount - ((multiplier + 1) * 100);
-        multiplier = multiplier + 1;
-        update();
-    }
-}*/
+
+function buyMultiplier(){
+    
+    if ((cookies >= (multiplier+1) * 5)) {
+    cookies = cookies - ((multiplier +1) * 5);
+    multiplier =  multiplier +1;
+}
+/*if((document.getElementById("autoClick").cliked = "false")&&(document.getElementById('multiplier').clicked = "true")){
+    cookies = cookies + (multiplier + 1);
+ }
+ if((document.getElementById("multiplier").clicked = "true")&& (document.getElementById("autoClick").cliked = "true")){
+    cookies = cookies + multiplier + autoClick;}
+*/
+update();
+}
+
+   /* if(document.getElementById('multiplier').clicked = "true"){
+        cookies = cookies + multiplier;
+    }*/
+    
+   
+
 
 function buyAutoClick() {
-    if (cookiecount >= ((autoClick + 1) * 20)) {
-        cookiecount = cookiecount - ((autoClick + 1) * 20);
-        autoClick = autoClick + 1;
-        update();
+    if ((cookies >= ((autoClick + 1) * 20)) && (document.getElementById("autoclicker").clicked = "true")) {
+      cookies = cookies - ((autoClick + 1) * 20);
+      autoClick = autoClick + 1;
     }
+      if(document.getElementById("autoclicker").clicked = "true") {
+        cookies = cookies + (autoClick);
+        update(); 
+    }
+    setInterval(timer, 1000);
 }
 
-/*
-function disableButton() {
-    let input = document.querySelector('input').value;
-    let buttons = document.querySelector('btn');
-    if (input = 0) {
-        buttons.setAttribute('disabled', 'disabled');
-    }
-}*/
-
-// Disable tests
-
-/*
-function disableButton() {
-    let cookiecount = document.getElementById('text1').innerHTML;
-    const save = document.getElementById("save");
-    const save_btn = document.getElementById("save-btn")
-
-    if (cookiecount == 0) {
-        save.disabled = true;
-        save().disabled = true;
-    }
-    else {
-        save.disabled = false;
-        save().disabled = false;
-    }
-}*/
 
 
-/*function disableButton_2() {
-    var count = document.getElementById('text1').innerHTML;
-    var save = document.getElementById("save");
-
-    if (count == 0) {
-        save.disabled = true;
-    }
-    else {
-        save.disabled = false;
-    }
-}*/
-
-/*function disable () {
-    const save = document.getElementById("save-btn");
-    const input = document.getElementById('text_1');
-
-    input.addEventListener('change', () => {
-        if (input.value == 0) {
-            save.disabled = true;
-            console.log("Disabled");
+function buyBooster(){
+    if ((cookies>=100) && (document.getElementById("boosterCost").clicked = "true")) {
+        cookies = cookies - 100; 
+        
         }
-        else {
-            save.disabled = false;
-            console.log("Enabled");
+
+        let time = 30;
+            const countdownElement = document.getElementById("countdown");
+            setInterval(updateCountdown,1000);
+
+            function updateCountdown() {
+                
+                if (time <= 30 && time >= 0) {
+                    countdownElement.innerHTML = time;
+                    time--;
+                    cookies = cookies * 2;
+                }
+                else {
+                    countdownElement.innerHTML = "Expired, buy again!!!";
+                }
+                update();
         }
-    })
-}*/
+     
 
-// Reset function ?
-
-function reset () {
-    let reset = document.getElementById("reset");
-    reset.addEventListener(onclick, () => {
-        return cookiecount = 0;
-    })
-    update();
-}
-
+    }

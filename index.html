@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie clicker</title>
+    
     <!--Styles-->
-    <!--<link rel="stylesheet" href="css/main.css">-->
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
@@ -17,94 +18,67 @@
     <header>
         <h1>Welcome to Cookieland - The Swartz Cookie Taskforce's bakery</h1>
     </header>
-    
+    <script>
+        function hoverImg() {
+            document.getElementById("clicker").style.width = "320px";
+        }
+        function normalImg() {
+            document.getElementById("clicker").style.width = "300px";
+        }
+    </script>
     <main>
         <div class="grid-container">
             <div class="grid-item">
                 <section class="score">
-                    <p id="subhead">(here, have a cookie)</p>
-                    <button id="cookieclick" onclick="add()">
-                        <img src="images/cookie@2x.png" alt="cookie" id="cookie" onmouseover="hoverImg()" onmouseout="normalImg()">
-
-                        <label class="score" id="cookie_label" for="clicker">You've got <span id="counter">0</span> COOKIES.</label>
-                    </button>
-                    
-                    <div>        
-                        <p id="CPS">per second : 
-                            <input type="text" id="text_2" disabled style="text-align: center;" value="0">
-                        </p>
-                    </div>
-        
-                    <div class="buttons">
-                        <button disabled class="btn" id="save" onclick="save()"><span id="save-btn">Save</span></button>
-                        <button class="btn" id="load" onclick="load()"><span id="load-btn">Load</span></button>
-                        <button class="btn" id="reset" onclick="reset()" ><span id="reset-btn">Reset</span></button>
-                    </div>
+                    <h6>Score count</h6>
+                    <p>(here, have a cookie !)</p>
+                    <label class ="score" for="clicker">
+                        <button type="button" class="score" id="clicker" name="clicker" onmouseover="hoverImg()" onmouseout="normalImg()">
+                             <img src="https://image.flaticon.com/icons/png/512/614/614131.png" alt="cookie" id="cookie" onclick="add()" >
+                        </button>
+                       <b> You got <span id="counter">0</span> cookies</b> <br>
+                    </label>
+                    <p id="cookiesPerSecond">You are gaining 0 cookies per second</p>
+                    <br><br>
+                        <label for="save" ><button id="save" name="save" onclick="save()">Save progress</button></label>
+                        <label for="load" ><button id="load" name="load" onclick="load()">Load previous score</button></label>
+                        <label for="reset" ><button id="reset" name="reset" onclick="reset()">Reset</button></label>
                 </section>
             </div>
 
             <div class="grid-item">
                 <section class="store">
-
-                    <label for="multiplier1" id="multiplier-box">
-                        <p>Multiplier upgrade</p>
-                            <button class="btn" id="multiplier" name="multiplier" onclick="buyMultiplier()">
-                                <span id="buyMultiplier">
-                                    <span id="multiplier1">X2</span>
-                                        <br>
-                                        <span id="costMultiplier">Cost : 10 Cookies</span>
-                                </span>
-                            </button>
-                        <p id="currentMultiplier">You own <input type="text" id="text" disabled style="text-align: center;"> multipliers</p>
+                    <h6>Store items</h6>
+                    <label for="multiplier"> <b>Get a MULTIPLIER<br>to boost the power of your click<br></b>
+                        <button name="multiplier" id="multiplier" onclick="buyMultiplier()">Multiplier X<span id="mlt">2</span>
+                            <br> (Cost : <span id="costMultiplier">10</span> cookies)
+                        </button>
                     </label>
+                    <p id='currentMultiplier'>Your current multiplier is x1</p>
 
                     <label for="autoclicker" id="autoclicker-box">
-                        <p>Buy an AutoClicker</p>
-                            <button class="btn" id="autoclicker" name="autoClicker" onclick="buyAutoClick()">
-                                <span id="buyAutoClick">
-                                    <span id="autoClick"><img src="images/custom-cursor.png" alt="cursor" id="cursor"></span> 
-                                        <br>
-                                        <span id="costAutoClick">Cost : 20 Cookies</span>
-                                </span>
-                            </button>
-                        <p id="amountAutoclick">You own <input type="text" id="text" disabled style="text-align: center;"> Auto Clickers</p>
+                        <b>Buy an AutoClicker</b> <br>
+                        <button class="btn" id="autoclicker" name="autoclicker" onclick="buyAutoClick()">
+                            AUTOCLICKER <br>
+                            <span id="costAutoClick">Cost : 20 Cookies</span>
+                        </button>
                     </label>
+                    <p id="amountAutoClick">You got 0 Auto Clickers</p>
 
-                    
-
-                    <label for="booster" id="booster-box">
-                        <p>Get your Turbo</p>
-                        <p>Countdown</p>
-                            <button class="btn" id="boosterCost" name="boosterCost" onclick="booster()">
-                                <span id="buyBooster">
-                                    <span id="Booster">!!!Booster!!!</span> 
-                                        <br>
-                                        <span id="costFarms">Cost : 100 Cookies</span>
-                                </span>
-                            </button>
+                    <label for="boosterCost">
+                        <b>Get your Turbo booster</b> <br>
+                        <span id="countdown"></span> <br>
+                        <button id='boosterCost' onclick="buyBooster()">!!!Booster!!! <br> (Cost : 100 cookies)</button>
                     </label>
-
-                 <!--   <label for="booster">
-                        Get your Turbo booster <br> <br>
-                        <button id='boosterCost' onclick="booster()"> <br> 100 cookies</button>
-                    </label> -->
-
-                    <!-- <label for="farm" id="farm-box">
-                        <p>Buy a Farm</p>
-                            <button class="btn" id="farm" name="farm" onclick="buyFarm()">
-                                <span id="buyFarm">
-                                    <span id="Farm"><img src="images/fruit-tree.png" alt="farm-img" id="farm-img"></span> 
-                                        <br>
-                                        <span id="costFarms">Cost : 50 Cookies</span>
-                                </span>
-                            </button>
-                        <p id="amountFarms">You own <input type="text" id="text" disabled style="text-align: center;">farms.</p>
-                    </label> -->
-
                 </section>
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>&#169; 2021 Swartz Cookie Taskforce</p>
+        <p>Brigita Sabutyte (HTML structure and Javascript) | David Tirel (Javascript) | Teodora Cozma (CSS structure and project management)</p>
+    </footer>
 
     <script src="script.js"></script>
     
