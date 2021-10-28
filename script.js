@@ -7,6 +7,7 @@ function normalImg() {
     document.getElementById("cookie").style.width = "300px";
     document.getElementById("cookie").style.height = "300px";
 }
+
 function update() {
     
     //increment
@@ -77,8 +78,6 @@ localStorage.setItem("multiplier", multiplier)
 localStorage.setItem("autoClick", autoClick);
 localStorage.setItem("booster", booster);
 
-
-
 }
 function load(){
     cookies = localStorage.getItem("cookies");
@@ -91,9 +90,9 @@ function load(){
 
    update();
 }
-function reset(){
-    cookies = 0;
 
+function reset() {
+    counter.innerHTML = 0;
 }
 
 
