@@ -20,8 +20,9 @@
 - Visual Studio Code (text editor)
 - Discord, Google Meet, Github, Replit (Communication)
 - Adobe XD (prototyping)
-- W3C Markup Validation Service
-- W3C CSS Validation Service
+- W3C Markup Validation Service (HTML inspection)
+- W3C CSS Validation Service (CSS inspection)
+- Google Lighthouse (performance inspection)
 
 ## Resources
 
@@ -87,7 +88,7 @@ Validation services :
 
 3. Store section :
     - Achievements and upgrades ?
-    - Store section = button upgrade clicker + point counter = 2nd section
+    - Store section = button upgrade clicker + point counter = 2nd section :
         - Make a multiplier (double or triple points) --> this step for review
         - Multiplier price (purchased)
         - Score updating
@@ -111,14 +112,14 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
 (https://www.youtube.com/watch?v=2Dx76lD8Scc&t=69s)
 *Description of the game (and its existential qualities!)*
-- 1 click = 1 cookie
-- 15 clicks = 15 cookies = 1 cursor (purchased)
-- 10 cursors = 1 cookie/sec (CpS)
+- 1 click = 1 cookie.
+- 15 clicks = 15 cookies = 1 cursor (purchased).
+- 10 cursors = 1 cookie/sec (CpS).
 - 100 cookies = grandma that produces and markets your cookies.
 - Cookies are currency that allows you to purchase farms, mines, factories, etc.
-= cookie economy that is permeating and overwhelming. This expands into an eventual cookieverse
-- Transcendance of existence = Ascend and start again
-- Golden cookie spawns randomly
+= cookie economy that is permeating and overwhelming. This expands into an eventual cookieverse.
+- Transcendance of existence = Ascend and start again.
+- Golden cookie spawns randomly.
 - Whatch out for the grandma's : potential rebellion and apocalypse. Save everyone with economic gain, or exploit them to make more wealth.
 - Small "code hack" in the console : Game.Earn(x).
 
@@ -183,9 +184,9 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 - How do we split the coding work ? How do we determine following tasks and delegate them ? If we each work on our own time, how do we agree on and consolidate the final code ?
 
 - Deciding how to communicate and share information :
-- On Discord, room 4 (chat + call).
-- ... (other collaboration tools).
-- Definitely Github, the repositories will be shared
+    - On Discord, room 4 (chat + call).
+    - ... (other collaboration tools).
+    - Definitely Github, the repositories will be shared.
 
 - Deciding on next steps :
     - Finish research today ?
@@ -199,20 +200,20 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
 
 - Daily working method :
-    - We each work on our own at the beginning, and at the end of the day, shar our code via Discord, and then "commit" everything on Replit.
+    - We each work on our own at the beginning, and at the end of the day, share our code via Discord, and then "commit" everything on Replit.
 
 ##### Thinking ahead - the evaluation portion
 
-- Regularly assess out progress and make sure the must-have features are included
+- Regularly assess out progress and make sure the must-have features are included.
 - Regularly update the ReadMe.
 - Towards the end (on the last day, or even during the coding process), use the validation and performance tools (See Lighthouse and W3C Validation tool); perhaps on Thursday.
 
 **This afternoon's steps (14:30 - 16:30)**
 
 - More research and mapping out the tasks for tomorrow :
-    - Brigita : HTML research and writing
-    - David : Javascript research
-    - Teodora : visual research and prototyping
+    - Brigita : HTML research and writing.
+    - David : Javascript research.
+    - Teodora : visual research and prototyping.
 
 
 
@@ -222,7 +223,7 @@ Example (reference) : http://orteil.dashnet.org/cookieclicker/.
 
 - Step 5 complete.
 - Sharing code.
-- Technical issues : connecting the HTML with the Javascript, getting the functions to work properly
+- Technical issues : connecting the HTML with the Javascript, getting the functions to work properly.
 - Also, the bonuses are for the players, so step 11 and further are mandatory.
 - Autoclicker is being done by David.
 - Multiplier done by Brigita ; pending as well.
@@ -248,7 +249,7 @@ Brigita : shared code and functions ; syntax issues resolved.
 - What are the next steps ? 
 
 - Issues : 
-    - Figuring out how to center elements !!!!!!! (Had to refresh my memory, again)
+    - Figuring out how to center elements !!!!!!! (Had to refresh my memory, again).
     - How to disable a button using Javascript : coding difficulties.
     - Save and Load not working with the multiplier.
     - Unable to continue using Sass due to compiling issues into the main CSS. So back to styling with vanilla CSS.
@@ -274,7 +275,7 @@ Brigita : shared code and functions ; syntax issues resolved.
     - [x] Work on disabling buttons (step 12).
     - [x] Inspect step 8.
     - [x] Redo Javascript.
-        - [ ] Resolve technical issues with the multipliers (loading and incrementing).
+        - [ ] Resolve technical issues with the multipliers (loading and incrementing) ; pending.
     - [x] Compare Javascript codes (Brigita, David).
     - [ ] Compare and merge HTML files and apply CSS style.
     - [x] Appearance-wise : do we need the button tag for the cookie and cursor, and other buttons ?
@@ -300,7 +301,7 @@ Brigita : shared code and functions ; syntax issues resolved.
 
 ### Day four (28/10) 
 
-**Morning meeting**
+**Morning meeting (9:00 - 9:30)**
 
 What needs to be done today :
 
@@ -308,23 +309,35 @@ What needs to be done today :
     - [x] Make the booster work.
     - [x] Make the clicks work independently.
     - [x] Prevent the scripts from running by itself.
+    - [ ] Make the multiplier function without the AutoClick.
 
 - [x] Update the HTML and CSS with the right tags.
     - [x] Add a footer!
 
 
-**Afternoon work**
+**Afternoon work (13:30 - 16:00)**
 - W3C HTML validation tool (issues) :
     - "Label" elements cannot have more than one descendant.
     - "p" elements cannot be descendants of labels.
     - Any "button" element descendant of a "label" with a "for" attribute must have an ID value that matches that attribute.
         - Solutions : all the labels could be inserted inside the buttons, but also MUST be inserted inside paragraphs.
+- W3C CSS validation tool : no issues.
 
-- [x] Deploy and run the site, and do the performance tests. Results = 
-    - Performance  = 86
-    - Accessibility = 95
-    - Best practices = 100
-    - SEO = 92
-- [ ] Fix any issues that appear from the tests.
-    - "Eliminate render-blocking resources" (issue with importing the font style)
-    -  "Image elements do not have explicit width and height"
+- [x] Deploy and run the site, and do the performance tests using LightHouse. Results = 
+    - Performance  = 86 ;
+    - Accessibility = 95 ;
+    - Best practices = 100 ;
+    - SEO = 92 ;
+- [x] Fix issues that appear from the tests.
+    - "Eliminate render-blocking resources" (issue with importing the font style).
+    -  "Image elements do not have explicit width and height."
+
+**Results =**
+- Performance = 91;
+- Accessibility = 95 ;
+- Best practices = 100 ;
+- SEO = 92 ;
+
+
+**Post-project report (16:20 - 17:00 and tomorrow 29/10) :**
+- Technical issues remaining : multiplier. Will be reviewed again tomorrow.
