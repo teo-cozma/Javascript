@@ -93,7 +93,23 @@ function load(){
 
 function reset() {
     counter.innerHTML = 0;
+    counter.value = 0;
+    cookies = localStorage.getItem("cookies");
+    cookies = 0;
+    autoClick = localStorage.getItem("autoClick");
+    autoClick = 0;
+    multiplier = localStorage.getItem("multiplier");
+    multiplier = 0; 
+    booster = localStorage.getItem("booster");
+    booster = 0;
 }
+
+/*function reset(){
+    if(document.getElementById("reset").clicked = "true"){
+        document.getElementById("counter").value = '0';
+        document.getElementById("counter").innerHTML = 0;
+    }
+}*/
 
 
 function buyMultiplier(){
@@ -147,7 +163,7 @@ function buyBooster(){
                 if (time <= 30 && time >= 0) {
                     countdownElement.innerHTML = time;
                     time--;
-                    cookies = cookies * 2;
+                    cookies = cookies + ((multiplier + autoClick) * 2);
                 }
                 else {
                     countdownElement.innerHTML = "Expired, buy again!!!";

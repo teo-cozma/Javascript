@@ -341,3 +341,7 @@ What needs to be done today :
 
 **Post-project report (16:20 - 17:00 and tomorrow 29/10) :**
 - Technical issues remaining : multiplier. Will be reviewed again tomorrow.
+ 
+ **(29/10)**
+ - [x] Reset button fixed!
+ - [ ] More responsive font-size according to device width.

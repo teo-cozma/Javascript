@@ -47,6 +47,32 @@ section {
 	}
 }
 
+@media only screen and (min-width: 868px) {
+	#counter {
+		font-size: 30px;
+        padding-top: 1em;
+	}
+    #cookiesPerSecond {
+        font-size: 20px;
+    }
+    #save {
+        font-size: 17px;
+    }
+    #load {
+        font-size: 17px;
+    }
+    #reset {
+        font-size: 17px;
+    }
+    footer {
+        font-size: 17px;
+    }
+    #multiplier {
+        font-size: 20px;
+    }
+    
+}
+
 p {
     color: #FFFFFF;
     font-family:'Gloria Hallelujah', cursive;
