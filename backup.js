@@ -1,9 +1,10 @@
-
 function hoverImg() {
     document.getElementById("cookie").style.width = "320px";
+    document.getElementById("cookie").style.height = "320px";
 }
 function normalImg() {
     document.getElementById("cookie").style.width = "300px";
+    document.getElementById("cookie").style.height = "300px";
 }
 function update() {
     

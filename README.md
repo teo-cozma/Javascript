@@ -5,9 +5,9 @@
 **Link to live version** : https://teo-cozma.github.io/Javascript/
 
 ## Team members
-- Brigita Sabutyte
-- David Tirel
-- Teodora Cozma
+- Brigita Sabutyte (Javascript and HTML)
+- David Tirel (Javascript)
+- Teodora Cozma (HTML and CSS)
 
 ## Languages
 
@@ -23,6 +23,9 @@
 - W3C Markup Validation Service (HTML inspection)
 - W3C CSS Validation Service (CSS inspection)
 - Google Lighthouse (performance inspection)
+
+## Image
+![Cookie clicker](./images/cookie_clicker.png)
 
 ## Resources
 
